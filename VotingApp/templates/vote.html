@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>Vote</title>
+</head>
+
+<body>
+
+    <section class="voting-container">
+
+        <h1>This is vote page...</h1><br><br><br>
+        <h1>I will not tell your vote to anyone</h1>
+
+        <form action="vote" method="post" class="table-form">
+            {% csrf_token %}
+            
+            <table border="1px solid black">
+                
+                <!-- <tr class="candidate1">
+                    <td>I will not tell your vote to anyone </td>
+                        <input type="hidden" name="userId" value="{{userId}}" required>
+                    <h1>{{userId}}</h1>
+                </tr> -->
+
+                <tr class="candidate1">
+                    <td class="data">Bharatiya Janata Party (BJP): </td>
+                    <td><input type="radio" name="candidate" value="BJP" required></td>
+                </tr>
+                <tr class="candidate1">
+                    <td class="data">Bahujan Samaj Party (BSP): </td>
+                    <td><input type="radio" name="candidate" value="BSP" required></td>
+                </tr>
+                <tr class="candidate1">
+                    <td class="data">Aam Aadmi Party (AAP): </td>
+                    <td><input type="radio" name="candidate" value="APP" required></td>
+                </tr>
+                <tr class="candidate1">
+                    <td class="data">Indian National Congress (INC): </td>
+                    <td><input type="radio" name="candidate" value="INC" required></td>
+                </tr>
+            </table>
+
+
+            <button class="btn btn-sm btn-dark">Submit</button>
+            <button class="btn btn-sm btn-dark">Reset</button>
+
+
+            <h2 class="text-center">{{msg}}</h2>
+            <button class="btn btn-sm btn-dark"><a href="/">Back</a></button>
+        </form>
+    </section>
+</body>
+
+</html>

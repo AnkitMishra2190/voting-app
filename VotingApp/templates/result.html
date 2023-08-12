@@ -1,0 +1,81 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>Result</title>
+</head>
+
+<body>
+    <div class="result-container">
+        <h1>This is result page...</h1>
+
+        <table border="1px solid black">
+            <thead class="data candidate1">
+                <tr>
+                    <th>ID</th>
+                    <th>candidate_politicalparties</th>
+                    <th>total</th>
+                    <!-- <th>userId</th> -->
+                </tr>
+            </thead>
+
+            <!-- {% for i in key %}
+        <tbody>
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.candidate_politicalparties}}</td>
+                <td>{{candidate1}}</td>
+                <td>{{i.userId}}</td>
+            </tr>
+            
+        </tbody>
+        {% endfor %} -->
+
+
+
+            <tbody class="data candidate1">
+                <tr class="data candidate1">
+                    <td>1</td>
+                    <td>Bharatiya Janata Party (BJP)</td>
+                    <td>{{candidate1}}</td>
+
+                </tr>
+                <tr class="data candidate1">
+                    <td>2</td>
+                    <td>Bahujan Samaj Party (BSP)</td>
+                    <td>{{candidate2}}</td>
+
+                </tr>
+                <tr class="data candidate1">
+                    <td>3</td>
+                    <td>Aam Aadmi Party (AAP)</td>
+                    <td>{{candidate3}}</td>
+
+                </tr>
+                <tr class="data candidate1">
+                    <td>4</td>
+                    <td>Indian National Congress (INC)</td>
+                    <td>{{candidate4}}</td>
+
+                </tr>
+
+            </tbody>
+
+
+
+        </table><br><br><br>
+        <h2 class="text-center">{{msg}}</h2>
+        <button class="btn btn-sm btn-dark"><a href="adminCreate">Admin Create</a></button>
+        <button class="btn btn-sm btn-dark"><a href="/admin2">Sign Out</a></button>
+
+    </div>
+</body>
+
+</html>

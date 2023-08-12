@@ -1,0 +1,75 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>Registration</title>
+</head>
+
+<body>
+    <!-- <h1>This is registration page...</h1> -->
+
+    <!-- <form method="post">
+        {% csrf_token %}
+        <table>
+            {{key.as_table}}
+            
+            <tr>
+                <td><input type="submit">Save</td>
+                <td><input type="reset">Reset</td>
+            </tr>
+        </table>
+    </form> -->
+
+
+    <form method="post">
+        {% csrf_token %}
+        <table border="1px solid black">
+            <section class="contact" id="contact">
+                <h2 class="text-center">This is registration page...</h2>
+                <div class="form">
+                    <input class="form-input" type="text" name="id" id="name" placeholder="Enter Your ID" required>
+
+                    <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+
+                    <input class="form-input" type="email" name="userId" id="name" placeholder="Enter Your userId"
+                        required>
+
+                    <input class="form-input" type="text" name="password" id="password"
+                        placeholder="Enter Your password" required>
+
+                    <input class="form-input" type="text" name="dob" id="dob" placeholder="Enter Your DOB" required>
+
+                    <input class="form-input" type="text" name="mobile" id="mobile" placeholder="Enter Your mobile"
+                        required>
+
+
+                    <button class="btn btn-sm btn-dark">Submit</button>
+                    <button class="btn btn-sm btn-dark">Reset</button>
+                </div>
+
+                <h2 class="text-center">{{msg}}</h2>
+                <button class="btn btn-sm btn-dark"><a href="/">Back</a></button>
+
+            </section>
+
+
+        </table>
+        <!-- <td><input type="submit"></td>
+        
+        <td><input type="reset"></td> -->
+
+    </form>
+
+    
+ 
+    <!-- <button class="btn btn-sm btn-dark"><a href="/">Back</a></button> -->
+</body>
+
+</html>

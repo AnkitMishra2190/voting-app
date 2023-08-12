@@ -1,0 +1,47 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+    <title>userLogin</title>
+</head>
+
+<body>    
+    <form method="post">
+        {% csrf_token %}
+        <table border="1px solid black">
+            <section class="contact" id="contact">
+                <h2 class="text-center">This is admin page...</h2>
+                <div class="form">
+                    
+                    <input class="form-input" type="email" name="userId" id="name" placeholder="Enter Your userId"
+                        required>
+
+                    <input class="form-input" type="text" name="password" id="password"
+                        placeholder="Enter Your password" required>
+
+                    <button class="btn btn-sm btn-dark">Sign In</button>
+                    
+                </div>
+
+                <h2 class="text-center">{{msg}}</h2>
+                <button class="btn btn-sm btn-dark"><a href="/">Back</a></button>
+
+            </section>
+
+
+        </table>
+    
+
+    </form>
+
+
+</body>
+
+</html>

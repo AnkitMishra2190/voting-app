@@ -1,0 +1,139 @@
+{% load static %}
+
+
+<!-- https://source.unsplash.com/900*900/?coding,apple --> <!-- copy image from here give different keyword -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!-- <link rel="stylesheet" href="CSS/responsive.css"> -->
+
+    <title>Online Vote Management system</title>
+</head>
+
+<body>
+    <nav class="navbar background height-nav-resp">
+        <ul class="nav-list visibility-class-resp">
+            <div class="logo"><img src="{% static 'images/img/logo-1.jpg' %}" alt="Logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="registration">Registration</a></li>
+            <li><a href="userLogin">User Login</a></li>
+            <li><a href="admin2">Admin Login</a></li>
+
+        </ul>
+
+        <div class="rightnav visibility-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- use section tag -->
+    <section class="background firstSection" id="home">
+        <img src="{% static 'images/img/test-2.jpg' %}" class="img">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big"></p>
+                <p class="text-small"></p>
+                <!-- <div class="button">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Video</button>
+                </div> -->
+            </div>
+
+            <!-- <div class="secondHalf">
+                <img src="img/Background.jpg" width="400px" alt="Laptop Image">
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="section" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">Implementation and Impact:</p>
+            <p class="sectionSubTag text-small">The implementation of the Online Voting Management System involves
+                cutting-edge technologies to ensure a seamless and reliable experience. Cloud-based infrastructure
+                guarantees high availability and minimal downtime, even during peak voting periods. This adaptability
+                caters to varying user loads and maintains a smooth voting process.
+
+                In terms of impact, the system revolutionizes the electoral landscape by streamlining administrative
+                tasks. Manual vote counting, data entry, and result tabulation become obsolete, reducing human errors
+                and expediting the announcement of election outcomes. This acceleration contributes to public trust in
+                the accuracy and efficiency of the voting process.
+
+                Additionally, the system promotes eco-friendliness by significantly reducing paper usage and the carbon
+                footprint associated with traditional voting methods. It aligns with modern sustainable practices,
+                reinforcing the notion of responsible citizenship beyond the act of voting.
+
+                In conclusion, the Online Voting Management System not only introduces technological advancements but
+                also fosters a more accessible, secure, and efficient democratic practice. By prioritizing user
+                experience, robust security measures, and environmental consciousness, the system drives positive change
+                in electoral procedures and strengthens the democratic fabric of society.
+            </p>
+        </div>
+        <div class="thumnail">
+            <img src="{% static 'images/img/online-voting-4.jpg' %}" alt="Laptop image"
+                class="imgDluid">
+        </div>
+    </section>
+
+    <section class="section section-Left">
+        <div class="paras">
+            <p class="sectionTag text-big">Ensuring Integrity and Transparency:</p>
+            <p class="sectionSubTag text-small">One of the Online Voting Management System's hallmark features is its
+                real-time monitoring capabilities. Election administrators gain invaluable insights into participation
+                rates, trends, and potential issues as they unfold. This real-time monitoring empowers administrators to
+                take swift action when necessary, ensuring the election's smooth progression.
+
+                Transparency is bolstered by the system's inherent audit trail. Every step of the voting process, from
+                registration to ballot counting, is recorded and stored securely. This transparent record serves as a
+                definitive source of information for verifying election results and addressing any disputes that may
+                arise, thereby enhancing the credibility of the process.</p>
+        </div>
+        <div class="thumnail">
+            <img src="{% static 'images/img/vote-2.png' %}" alt="Laptop image"
+                class="imgDluid">
+        </div>
+    </section>
+
+
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Conclusion:</p>
+            <p class="sectionSubTag text-small">The Online Voting Management System represents a watershed moment in the
+                evolution of democratic participation. By leveraging digital technology, this system addresses the
+                limitations of traditional voting methods, offering a secure, accessible, and efficient platform for
+                citizens to exercise their voting rights. Its user-friendly interface, robust security measures, and
+                real-time monitoring capabilities contribute to a more transparent and engaging democratic process.
+
+                As the world continues to embrace technological advancements, the Online Voting Management System stands
+                as a testament to the potential of innovation in enhancing democratic ideals. While challenges persist,
+                the benefits of increased accessibility, transparency, and cost-efficiency underscore the system's role
+                in shaping the future of elections and fostering active citizen engagement in the digital age.</p>
+        </div>
+        <div class="thumnail">
+            <img src="{% static 'images/img/bg-6.jpg' %}" alt="Laptop image">
+        </div>
+    </section>
+
+
+
+    <footer class="background">
+        <p class="text-footer">
+
+            Copyright &copy; 2027 www.OnlineVote.com - All rights reserved
+        </p>
+    </footer>
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>
